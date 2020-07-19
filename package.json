@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "nodemon index.js --ignore client",
-    "create-schema": "node ./server/schema/print_schema.js",
+    "create-schema": "node ./server/schema/schema.js",
     "relay": "npm run create-schema && relay-compiler --src ./ --schema ./server/schema/schema.graphql"
   },
   "author": "",
