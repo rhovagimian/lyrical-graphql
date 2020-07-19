@@ -7,7 +7,7 @@ if (!MONGO_URI) {
   throw new Error("You must provide a MongoDB URI");
 }
 
-function open() {
+function connect() {
   mongoose.connect(MONGO_URI, { useNewUrlParser: true });
   const db = mongoose.connection;
   db.once("open", () => console.log("Connected to MongoDB instance."));
@@ -16,4 +16,4 @@ function open() {
   return db;
 }
 
-module.exports = { open };
+module.exports = { connect };
