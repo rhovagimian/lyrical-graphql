@@ -1,4 +1,5 @@
 //@ts-check
+const models = require("../models");
 const graphql = require("graphql");
 const { GraphQLSchema } = graphql;
 

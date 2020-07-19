@@ -1,6 +1,5 @@
 //@ts-check
 const express = require("express");
-const models = require("./models");
 const { graphqlHTTP } = require("express-graphql");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
